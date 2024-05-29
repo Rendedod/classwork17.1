@@ -1,0 +1,48 @@
+﻿<Window x:Class="classwork17._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:classwork17._2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Loaded="FormLoaded" 
+          HorizontalAlignment="Center">
+        
+        <Border 
+                Width="200" 
+                Height="100"
+                CornerRadius="10"
+                Background="Black"
+                Padding="2">
+
+            <Border Background="White"
+                    Padding="3"
+                    CornerRadius="8">
+                
+                <TextBox x:Name="mainText"
+                         BorderBrush="White" 
+                         BorderThickness="0"
+                         Text="Привет мир!"
+                         />
+            </Border>
+        </Border>
+
+
+        <StackPanel VerticalAlignment="Center"
+                    HorizontalAlignment="Center" Margin="0,200,0,0">
+
+            <CheckBox Content="Подчеркнутый текст"
+                      x:Name="underlined" 
+                      Click="underlined_Checked"/>
+
+            <CheckBox Content="Жирный текст"
+                      x:Name="thick" 
+                      Click="thick_Checked"/>
+
+            <CheckBox Content="Курсив"
+                      x:Name="italics" 
+                      Click="italics_Checked"/>
+        </StackPanel>
+    </Grid>
+</Window>
